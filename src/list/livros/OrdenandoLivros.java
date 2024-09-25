@@ -24,9 +24,9 @@ public class OrdenandoLivros {
 
     }
 
-    public List<Livro> ordenarPorAno(){
-        List<Livro> livrosOrdenadosPorAno = new ArrayList<>(listaLivros);
-        Collections.sort(livrosOrdenadosPorAno, new ComparetoAno());
-        return  livrosOrdenadosPorAno;
+    public List<Livro> ordenarPorAutor(){
+        List<Livro> livrosPorAutor = new ArrayList<>(listaLivros);
+        Collections.sort(livrosPorAutor, new ComparePorAutor());
+        return  livrosPorAutor;
     }
 }
